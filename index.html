@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./styles/reset.css">
+  <link rel="stylesheet" type="text/css" href="./styles/fonts.css">
+  <link rel="stylesheet" type="text/css" href="./styles/global.css">
+  <link rel="stylesheet" type="text/css" href="./styles/lab_four_starter.css">
+
+  <script src="https://kit.fontawesome.com/48fd386c8d.js" crossorigin="anonymous"></script>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=M+PLUS+Rounded+1c:wght@300&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="./styles/lab_four.css">
+
+  <script src="./scripts/lab_four.js" defer></script>
+
+
+  <title>Common Website Features</title>
+</head>
+<body>
+
+  <section class="hero-container">
+    <div class="hero-img">
+      <img class="hero-logo" src="./assets/logo-primary.png"/>
+      <div class="hero-text">
+        <h1>Embracing the Digital Frontier with Expertise in Communication</h1><br/>
+        <h2>Even as the digital world expands, I believe that it is humanity that connects people to one another. I want to cherish that aspect.</h2>
+      </div>
+    </div>
+  </section>
+
+  <section class="container content-container">
+    <div class="content">
+      <div class="c-message">
+        <h1>Naomi Kagami</h1>
+        <p>Nice to meet you, my name is Naomi. Currently, I work...</p>
+        <button onclick="goToSection('about')"> Read More</button>
+      </div>
+      <div class="c-image">
+        <img src="./assets/naomi.jpeg"/>
+      </div>
+    </div>
+  </section>
+
+  <section class="card-container">
+    <h1 class="card-message"> Works and Events</h1>
+    <ul class="card-container">
+      <li class="card">
+        <img src="./assets/IMG_0984.jpg" alt="tokyo_night">
+        <div class="card-content">
+          <h3 class="subheader">
+            Tokyo
+          </h3>
+          <h4 class="header">
+            Flower
+          </h4>
+          <p class="paragraph">
+            Shooting Visual Images: As part of PR tasks, I have also planned the shooting of seasonal visuals.
+          </p>
+        </div>
+      </li>
+      <li class="card">
+        <img src="./assets/IMG_2495.jpg" alt="tokyotower">
+        <div class="card-content">
+          <h3 class="subheader">
+            Tokyo
+          </h3>
+          <h4 class="header">
+            Yellow Pants
+          </h4>
+          <p class="paragraph">
+            When considering visual design, the first things I think about are the brand's image and colors. 
+            This is because colors are crucial elements that make an impression on people.
+          </p>
+        </div>
+      </li>
+      <li class="card">
+        <img src="./assets/IMG_2954.JPG" alt="shibuya">
+        <div class="card-content">
+          <h3 class="subheader">
+            Tokyo
+          </h3>
+          <h4 class="header">
+            Airplane 
+          </h4>
+          <p class="paragraph">
+            During buying trips abroad, I was primarily responsible for Europe. 
+            The opportunity to meet many creators had a significant impact on the aesthetics of my life.
+          </p>
+        </div>
+      </li>
+      <li class="card">
+        <img src="./assets/IMG_3101.jpg" alt="rainbowbride">
+        <div class="card-content">
+          <h3 class="subheader">
+            Tokyo
+          </h3>
+          <h4 class="header">
+           London
+          </h4>
+          <p class="paragraph">
+            After majoring in fashion marketing at an arts university in London UK, 
+            I am currently working in public relations for a fashion retail company in Japan.
+          </p>
+        </div>
+      </li>
+      <li class="card">
+        <img src="assets/IMG_7870.jpg" alt="kabuki">
+        <div class="card-content">
+          <h3 class="subheader">
+            Tokyo
+          </h3>
+          <h4 class="header">
+            Shooting 
+          </h4>
+          <p class="paragraph">
+            I have also been involved in planning the reuse of the shot visuals for websites.
+          </p>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <section id="about" class="video-container">
+    <h1 class="video-message"> About Me</h1>
+    <div class="video-iframe">
+      <p>
+        Nice to meet you, my name is Naomi. 
+        Currently, I work as a PR professional at a fashion retail company in Tokyo. 
+        I believe that digital communication will continue to play a significant role in the media world, 
+        so I have added studying at SAIT in Canada to my life's tasks in order to deepen my knowledge in 
+        this field.
+        <br/>
+        <br/>
+      </p>
+      <div class="iframe-wrapper">
+        <iframe 
+          src="https://www.youtube.com/embed/QjKjYMbgUAk?si=mZr-HbbMVonJysRf" 
+          title="Video of myself in my Company">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <section class="container accordion-container">
+    <details id="sensoji" class="accordion">
+      <summary>My professional career</summary>
+      <p>
+        I have been active in the fashion industry for many years. 
+        Initially, I worked as a salesperson at a renowned maison brand in Tokyo, 
+        later taking on the role of a buyer as well, which gave me numerous opportunities 
+        to immerse myself in European fashion culture. After majoring in fashion marketing 
+        at an arts university in London UK, I am currently working in public relations for a 
+        fashion retail company in Japan.
+      </p>
+    </details>
+    <details id="cuisine" class="accordion">
+      <summary> What I notice in Canada</summary>
+      <p>
+        What I noticed upon arriving in Canada is that in this diverse country, 
+        I encountered an abundance of talented individuals. While attending SAIT, 
+        I met many people who already possessed professional skills. I witnessed firsthand 
+        that Canada is not fully utilizing this talent. 
+      </p>
+    </details>
+    <details id="art" class="accordion">
+      <summary>Next step is...</summary>
+      <p>
+        I wonder how many offers these individuals with such skills would receive in Japan, 
+        especially in Tokyo. It feels like a significant waste. Therefore, I am determined 
+        to leverage this network of connections I have built in Canada in the future.
+      </p>  
+    </details>
+  </section>
+
+  <section class="footer-container">
+   <div class="f-wrapper">
+      <div class="f-message">
+        <div class="f-info">
+            <h2>Information</h2>
+            <p>
+              Change information
+            </p>
+            <h2>Social Media</h2>
+            <p class="f-icons">
+              <i class="fa-brands fa-airbnb"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-solid fa-envelope"></i>
+            </p>
+        </div>
+        <div class="f-links">
+            <h2>Links</h2>
+            <p>
+              <a href="#">Privacy Policy</a> 
+              <i class="fa-solid fa-chevron-right"></i>
+            </p>
+            <p>
+              <a href="#">Terms of Use</a>
+              <i class="fa-solid fa-chevron-right"></i>
+            </p>
+            <p>
+              <a href="#">Accessibility</a>
+              <i class="fa-solid fa-chevron-right"></i>
+            </p>
+        </div>
+      </div>
+      <div class="f-map">
+        <iframe src="https://www.google.com/maps/d/embed?mid=1LffNxpYhF2ixp5lRIKPQ3hJocq0&hl=en_US&ehbc=2E312F" 
+        width="640" 
+        height="250"></iframe>
+        
+      </div>
+    </div>
+    <div class="f-wrapper">
+        <div class="f-copyright">
+          Copyright &#169; <span id="year"></span> Naomi Kagami
+        </div>
+    </div>
+  </section>
+</body>
+</html>

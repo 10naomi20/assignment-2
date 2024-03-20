@@ -1,0 +1,323 @@
+.body {
+    font-family: "PT Sans", sans-serif;
+}
+
+
+
+.hero-img {
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/pexels-artem-podrez-7232394.jpg");
+    
+}
+
+.hero-logo {
+    object-fit: contain;
+}
+
+.hero-text {
+    text-align: left;
+    margin-left: 4rem;
+    width: 40rem;
+}
+
+.hero-text h1, 
+.hero-text h2,
+.hero-text p{
+    line-height: inherit;
+}
+
+.hero-text h2 {
+    font-weight: 200;
+}
+
+
+.content-container{
+    background-color: unset;
+    height: inherit;
+} 
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+.c-message {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.c-message button {
+    border: none;
+    width: 8rem;
+    height: 2rem;
+    background-color: #eee;
+    color: #444;
+}
+
+.c-message button:hover {
+    background-color: #ccc;
+    transition: 0.4s;
+}
+
+.c-image img {
+    max-width: 400px;
+    max-height: 400px;
+    object-fit: contain;
+    border-radius: 3px;
+    
+}
+
+.card-container {
+    margin: 3rem auto;
+    padding: 3rem 1.5rem;
+    max-width: 90rem;
+ }
+
+.video-container{
+    margin: 3rem auto;
+    padding: 3rem 1.5rem;
+    max-width: 90rem;
+ }
+ 
+ .video-message{
+     text-align: left;
+ }
+ 
+ .iframe-wrapper {
+     text-align: center;
+     
+ }
+ 
+ .video-iframe iframe{
+     width: 70%;
+     height: 70%;
+     aspect-ratio: 16/9;
+ }
+ 
+ .video-iframe p {
+     padding: 3rem 2rem;
+     font-weight: 200;
+ }
+
+.accordion-container {
+    background-color: unset;
+    height: unset;
+}
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+.footer-container {
+    background-color: black; 
+    height: unset;
+    color: white;
+}
+.f-wrapper {
+    display: flex;
+    flex-direction: row;
+    padding: 3rem;
+}
+
+.f-message {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+.f-icons {
+    font-size: 2rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.f-message a {
+    color: white;
+    text-decoration: none;
+}
+
+.f-copyright {
+    margin: auto;
+}
+
+.f-map {
+    width: 50%;
+    margin: auto;
+}
+
+.card {
+    list-style-type: none;
+    flex-basis: 30%;   
+    margin: 1rem;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card:hover {
+    margin-top: 92px;
+    cursor: pointer;
+    box-shadow: 0px 12px 30px 0px rgba(0, 0, 0, 0.2);
+    transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+
+.card img {
+    border-bottom: 0.25rem solid #fc0;
+    border-radius: 0.25rem 0.25rem 0 0;
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 0.25rem;
+    width: 24rem;
+}
+
+.card-content {
+    padding: 1rem;
+}
+
+/*
+    Screen less than 1200px
+
+    - Adjust the content section so that the image is above the message
+    - Hide the map, and maximize the width of the footer information
+*/
+@media ( width <= 1200px) {
+    .content{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .f-message {
+        width: 100%;
+    }
+
+    .f-wrapper {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .f-map {
+        display: none;
+    }
+}
+
+@media ( width <= 400px) {
+    .c-image {
+        display: none;
+    }
+
+    .f-message {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+        line-height: unset;
+    }
+    .header-container {
+        display: none;
+    }
+
+    .content-image {
+        display: none;
+    }
+
+    .footer-message {
+        width: 100%;
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .card {
+        flex-basis: 100%;
+    }
+
+    .hero-img {
+        flex-direction: column;
+    }
+    .hero-logo {
+        width: 45%;
+    }
+
+    .hero-text {
+        margin: 1rem 0;
+        text-align: center;
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .card {
+        flex-basis: 45%;
+    }
+    img {
+        height: 15.5rem;
+    }
+    .card-container:first-of-type .card:last-of-type img {
+        height: unset
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .card {
+        flex-basis: 30%;
+    } 
+    img {
+        height: 15.5rem;
+    }
+}
+
+@media ( width <= 600px) {
+    
+
+    .hero-text {
+        width: inherit;
+        margin: unset;
+    }
+
+}
+
+
